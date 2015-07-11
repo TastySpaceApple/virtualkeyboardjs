@@ -6,6 +6,9 @@
 	width:440px;
 	background-color:#000000;
 	padding:10px;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 #keyboard button, #keyboard button:focus{
 	font-size:20px;
