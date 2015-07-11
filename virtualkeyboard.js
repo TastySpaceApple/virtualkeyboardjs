@@ -32,7 +32,6 @@ VirtualKeyboard = (function(undefined){
 		if( inputs.length ){
 			for(var i=0, len=inputs.length; i<len; i++){
 				var input = inputs[i];
-				console.log(input);
 				this.linkedInputs.push(input);
 				link_input(input);
 			}
@@ -57,9 +56,9 @@ VirtualKeyboard = (function(undefined){
 		}
 	}
 	VirtualKeyboard.prototype.show = function(input){ 
-		console.log(input);
 		var rect = input.getBoundingClientRect();
 		this.dom.style.top = rect.top + window.scrollY + rect.height + 'px' ;
+		this.dom.style.left = rect.left + rect.width + window.scrollX - 440 + 'px' ;		
 		this.dom.setAttribute("data-shown", "true"); 
 		this.connectedInput = input;
 	}
