@@ -1,0 +1,24 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="rtl">
+  <head>
+	<meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	
+	<link rel="stylesheet" type="text/css" href="virtualkeyboard.css" />
+	<script src="virtualkeyboard.js" type="text/javascript"></script>
+  </head>
+<body>
+	<p><input type="text" id="hello"></p>
+	<p><input type="text" id="hello2"></p>
+	<script type='text/javascript'>
+		vk = new VirtualKeyboard()
+		vk.load(VirtualKeyboard.keyboard_layouts["ar"]);
+		vk.link(document.querySelectorAll('input[type=text]'))
+	</script>
+</body>
+
+</html>
